@@ -1,18 +1,20 @@
 //var declarations
-var headerEl = document.querySelector(".header");
+
+// var headerEl = document.querySelector(".header");
 var timerEl = document.querySelector(".timer");
-var mainEl = document.querySelector(".main");
+// var mainEl = document.querySelector(".main");
 var startBtn = document.createElement("button")
 document.body.appendChild(startBtn);
 startBtn.setAttribute("style", "display: block; height: 60px; width: 80px; margin: auto");
 startBtn.innerHTML = "Start!" ;
+startBtn.addEventListener("click", countdown);
 
 var secondsLeft = 10;
 var score = 0;
 var total = 0;
 var incorrect = 0;
 
-//Questions go here if we don't get feedback on the server calls.
+//Questions go here
 var questions = {
     "Question 1": "Question here",
     "Answers": [
@@ -47,7 +49,7 @@ var questions = {
 
 //countdown timer function
 function countdown() {
-    button.style.display = 'none'; 
+    startBtn.style.display = 'none'; 
     var timerInterval = setInterval(function() {
       secondsLeft--;
       timerEl.textContent = secondsLeft + " remaining.";
@@ -70,9 +72,6 @@ function scoreScreen() {
   
 }
 
-//Start Button
-//clear start button, and then start timer, and start questions. 
-
 function startGame(event) {
     event.preventDefault();
    
@@ -84,4 +83,5 @@ function startGame(event) {
 
 
 
-startBtn.addEventListener("click", countdown);
+
+
