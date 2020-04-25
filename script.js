@@ -3,11 +3,15 @@
 // var headerEl = document.querySelector(".header");
 var timerEl = document.querySelector(".timer");
 // var mainEl = document.querySelector(".main");
+var cardEl = document.querySelector(".card")
+
+//Start button appear and styling
 var startBtn = document.createElement("button")
 document.body.appendChild(startBtn);
 startBtn.setAttribute("style", "display: block; height: 60px; width: 80px; margin: auto");
 startBtn.innerHTML = "Start!" ;
 startBtn.addEventListener("click", countdown);
+startBtn.addEventListener("click", startGame);
 
 var secondsLeft = 10;
 var score = 0;
@@ -15,36 +19,36 @@ var total = 0;
 var incorrect = 0;
 
 //Questions go here
-var questions = {
-    "Question 1": "Question here",
-    "Answers": [
+var questions = [{
+    "title": "Question One",
+    "Choices": [
         "Wrong 1",
         "Wrong 2",
         "Right", 
         "Wrong 3"
     ],
-    "Question 2": "Question here",
-    "Answers": [
+    "title": "Question Two",
+    "Choices": [
         "Wrong 1",
         "Wrong 2",
         "Right", 
         "Wrong 3"
     ],
-    "Question 3": "Question here",
-    "Answers": [
+    "title": "Question Three",
+    "Choices": [
         "Wrong 1",
         "Wrong 2",
         "Right", 
         "Wrong 3"
     ],
-    "Question 4": "Question here",
-    "Answers": [
+    "title": "Question Four",
+    "Choices": [
         "Wrong 1",
         "Wrong 2",
         "Right", 
         "Wrong 3"
     ],
-}
+}];
 
 
 //countdown timer function
@@ -74,6 +78,17 @@ function scoreScreen() {
 
 function startGame(event) {
     event.preventDefault();
+
+    var questionEl = document.querySelector(".card-header");
+    cardEl.setAttribute("Style" , "display: block")
+
+    questionEl.textContent = questions[0]['title'] ;
+
+    // for ( let i = 0 ; i < questions.length ; i++){
+    //     questionEl.textContent = questions[i]["title"] ;
+    //     console.log(questionEl);
+    //     console.log(i);
+    // }
    
     
 
