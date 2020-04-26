@@ -17,6 +17,14 @@ header {
 
 }
 
+.highScores {
+    float: left;
+}
+
+.mainText {
+    text-align: center;
+}
+
 .timer {
     float: right;
 }
