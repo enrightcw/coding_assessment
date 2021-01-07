@@ -1,5 +1,5 @@
 
-# homeworkFour
+# Coding Assessment
 #### Author: enrightcw
 
 This is a code assessment/challenge with coding based questions set to a countdown timer. On completion it allows you to enter initials and saves your score locally.  The scores can then be viewed on the High Scores page.
