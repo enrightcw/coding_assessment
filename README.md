@@ -1,12 +1,45 @@
+
 # homeworkFour
+#### Author: enrightcw
 
-This homework was exceedingly difficult for me.  I think this is where working with a group actually worked against me.  We had too many cooks in the kitchen. 
+This is a code assessment/challenge with coding based questions set to a countdown timer. On completion it allows you to enter initials and saves your score locally.  The scores can then be viewed on the High Scores page.
 
-I got my main screen and my start button to work.  I'm able to display the first question and some placeholder answers, however when I select an "li" item, the only item it catches the onclick event is the last one in the list.  This "incorrect" answer correctly decreases the timer, and when the timer hits zero, it does bring the player to the score screen to put in their initials.
+### Open Issues <img src= "https://img.shields.io/github/issues/enrightcw/homeworkFour">
 
-The initials however, do not save appropriately to local storage and I was unable to get to the high scores screen.
+# Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Tests](#tests)
+* [Questions](#questions)
+* [Contributors](#contributors)
+* [License](#license)
 
-I started working on this homework a week ago, and worked on it fairly regularly each day/night, however I still ran out of time.
+## Installation
 
-I'm going to start working on this coming week's homework tomorrow(Sunday), and if I feel confident that I'll be able to get it done, then I'll meet with a tutor regarding Homework Four, and take your extension offer.
+none
 
+## Usage
+
+n/a
+
+## Tests
+
+none
+
+## Questions
+
+Using the email link below, please reach out with any questions.
+
+### Picture
+<img src="https://avatars2.githubusercontent.com/u/58670012?v=4">
+
+### Email 
+enrightcw@gmail.com
+
+## Contributors
+
+
+
+## License
+
+<img src="https://img.shields.io/github/license/enrightcw/homeworkFour">
